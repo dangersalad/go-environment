@@ -1,6 +1,6 @@
 package environment
 
-var (
+const (
 	// EnvKeyDeployEnv is the env variable name for the deployment environment
 	EnvKeyDeployEnv = "DEPLOY_ENV"
 	// DeployEnvDevelopment is the value for development deployments
