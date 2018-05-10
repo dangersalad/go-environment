@@ -39,3 +39,10 @@ func ReadOptions(params Options) (Options, error) {
 	return params, nil
 
 }
+
+// ReadOptionsAllowMissing reads options from the environment. A
+// missing key will not trigger an error.
+func ReadOptionsAllowMissing(params Options) Options {
+	params, _ = ReadOptions(params)
+	return params
+}
