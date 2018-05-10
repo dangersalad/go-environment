@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-// Options are the options being looked for in the environment
+// Options are the options being looked for in the environment.
 type Options map[string]string
 
 // ReadOptions reads options from the environment. If the value of a
