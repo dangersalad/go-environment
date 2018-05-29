@@ -26,7 +26,9 @@ func DeployEnv() string {
 	}
 
 	currentDeployEnv = e[EnvKeyDeployEnv]
-	if currentDeployEnv == "dev" {
+	if currentDeployEnv == "dev" ||
+		currentDeployEnv == "test" ||
+		currentDeployEnv == "testing" {
 		currentDeployEnv = DeployEnvDevelopment
 	} else if currentDeployEnv == "prod" {
 		currentDeployEnv = DeployEnvProduction
